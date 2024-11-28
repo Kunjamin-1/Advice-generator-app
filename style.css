@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvb;
+}
+
+.advice-box{
+    min-height: 15rem;
+    padding: 2rem 2.2rem 2.5rem;
+    max-width: 28vw;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1.5rem;
+    background-color: hsl(217, 19%, 24%);
+}
+.advice-number{
+    text-transform: uppercase;
+    color: hsl(150, 100%, 66%);
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.advice{
+    font-size: 0.85rem;
+    text-align: center;
+    color: hsl(193, 38%, 86%);
+}
+.divider{
+    margin: 1rem 0 0 0;
+}
+.divider img{
+    width: 100%;
+}
+.roll-dice{
+    background-color: hsl(150, 100%, 66%);
+    height: 3.8rem;
+    width: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.roll-dice:hover{
+    box-shadow: 0 0 2.5rem hsl(150, 100%, 66%);
+}
+
+@media only screen and (max-width: 425px){
+    .advice-box{
+        max-width: 100%;
+    }
+    .advice-number{
+        letter-spacing: 4px;
+        font-size: 0.75rem;
+    }
+    .advice {
+        font-size: 0.8rem;
+    }
+}
+
